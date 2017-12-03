@@ -31,5 +31,10 @@ botón para hacer un delete en grupos.
 <input type="submit" value="Delete">
  </form>
  
+  <form action="Update" method="POST">Presiona el
+botón para hacer un udate en grupos.
+<input type="submit" value="Update">
+ </form>
+ 
  </body>
 </html>

@@ -34,6 +34,9 @@ public class NewSessionBean {
         emf.createEntityManager().persist(gru);
     }
     
+    public void updateGrupos(Grupos gru){
+        emf.createEntityManager().merge(gru);
+    }
     public void deleteGrupos(String id){
         System.out.println(id);
         List g = emf.createEntityManager().createNamedQuery("Grupos.findById").setParameter("id", id).getResultList();
